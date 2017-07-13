@@ -4,10 +4,10 @@ $(document).ready(function() {
     $("body").addClass("green-background");
     $("ul#user").append("<li>This is green line!</li>");
     $("ul#webpage").append("<li>Why green there!!</li>");
-    $("#user").children("li").click(function() {
+    $("#user").children("li").first().click(function() {
       $(this).remove();
     });
-    $("#webpage").children("li").click(function() {
+    $("#webpage").children("li").first().click(function() {
       $(this).remove();
     })
   });
@@ -15,11 +15,11 @@ $(document).ready(function() {
     $("body").removeClass();
     $("body").addClass("yellow-background");
     $("ul#user").append("<li>This is yellow page</li>")
-    $("#user").children("li").click(function() {
+    $("#user").children("li").first().click(function() {
       $(this).remove();
     });
     $("ul#webpage").append("<li>Why yellow there!!</li>");
-    $("#webpage").children("li").click(function() {
+    $("#webpage").children("li").first().click(function() {
       $(this).remove();
     });
   });
